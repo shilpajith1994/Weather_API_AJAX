@@ -1,13 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "utf-8";
 /* ==========================================================================
-   1. CSS Reset Code
-   ========================================================================== */
+1. CSS Reset Code
+========================================================================== */
 
 /* 1.1. Eric Meyers Reset
-   http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-   ========================================================================== */
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+========================================================================== */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
@@ -70,7 +77,7 @@ sup { top: -.7em; }
 sub { bottom: -.25em; }
 
 /* 1.2. Clear Fix
-   ========================== */
+========================== */
 
 .cf:before,
 .cf:after {
@@ -83,6 +90,7 @@ sub { bottom: -.25em; }
 
 /*for all*/
 body {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: sans-serif;
 }
@@ -103,52 +111,111 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 /*=================================
-  Header styling starts here
+main styling starts here
+=================================*/
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  
+}
+
+
+.weather {
+  padding: 50px 70px;
+  border : 2px solid #000;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #000;
+  text-align: center;
+}
+
+form { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
+
+h1 {
+  padding-bottom: 7px;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 20px;
+  color: #2a92df;
+  font-size: 32px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+
+li {
+  margin-bottom: 10px;
+  display:block;
+  font-weight: bolder;
+}
+
+.form-input { width: 250px; }
+
+.searchText {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px
+}
+
+.form-control { margin-left: 2%; }
+
+.submitBtn {
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.weatherDetails {
+  width: 100%;
+  padding: 20px 15px;
+  border-radius: 6px;
+  margin: 30px 0 0;
+  background-color: #fff;
+}
+
+/*=================================
+main styling ends here
 =================================*/
 
 
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
-  main styling starts here
-=================================*/
-
-
-
-
-
-
-
-
-/*=================================
-  main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
