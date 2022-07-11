@@ -1,0 +1,2 @@
+# Weather_API_AJAX
+HTML / CSS / JAVASCRIPT / AJAX (API calls)
